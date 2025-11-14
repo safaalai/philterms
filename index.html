@@ -175,4 +175,45 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  function updateSectionVisibility() {
+    var sections = document.querySelectorAll('h2');   // each section heading
+    sections.forEach(function (sec) {
+      var table = sec.nextElementSibling;
+      if (!table || table.tagName.toLowerCase() !== 'table') return;
+
+      // count visible non-header rows
+      var visible = 0;
+      table.querySelectorAll('tr').forEach(function (row) {
+        if (row.querySelector('th')) return; // skip headers
+        if (row.style.display !== 'none') visible++;
+      });
+
+      // hide section heading + table if no visible rows
+      if (visible === 0) {
+        sec.style.display = 'none';
+        table.style.display = 'none';
+      } else {
+        sec.style.display = '';
+        table.style.display = '';
+      }
+    });
+  }
+
+  // Run once initially
+  updateSectionVisibility();
+
+  // Patch search box so that it also updates section visibility
+  var input = document.getElementById('searchBox');
+  if (input) {
+    input.addEventListener('input', function () {
+      // defer slightly so row filtering completes first
+      setTimeout(updateSectionVisibility, 10);
+    });
+  }
+
+});
+</script>
 </body></html>
