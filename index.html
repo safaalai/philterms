@@ -1,349 +1,169 @@
 <!DOCTYPE html>
-<html><head><meta charset='utf-8'>
-<link rel="icon" href="favicon.ico">
-<title>Common Terms in Analytical Philosophy (English & Latin)</title>
-<style>
-body{font-family:Arial, sans-serif;max-width:900px;margin:2rem auto;line-height:1.5;}
-h1{margin-bottom:0.1rem;}
-#subtitle{margin-top:0.1rem;}
-#search-container{margin:1rem 0 1.5rem 0;}
-#searchBox{width:100%;max-width:420px;padding:0.4rem 0.6rem;font-size:0.95rem;box-sizing:border-box;}
-#search-help{font-size:0.85rem;color:#555;margin-top:0.25rem;}
-table{border-collapse:collapse;width:100%;margin:0.75rem 0 1.25rem 0;}
-th,td{border:1px solid #ccc;padding:0.4rem;vertical-align:top;}
-th{background:#f5f5f5;}
-</style></head><body>
-<h1>
-  <img src="favicon.ico" alt="logo" style="height:40px; width:40px; vertical-align:middle; margin-right:10px;">
-  PhilTerms
-</h1>
-<h2 id="subtitle">Common Terms in Analytical Philosophy (English & Latin)</h2>
-<div id="search-container">
-  <input type="search" id="searchBox" placeholder="Type to filter terms, meanings, and examples...">
-  <div id="search-help">Search scans all sections. Leave empty to show everything.</div>
-</div>
-<h2>Logical Structure &amp; Argument</h2>
-<table border='1' cellpadding='6' cellspacing='0'>
-<tr><th>Term</th><th>Meaning</th><th>Example</th></tr>
-<tr><td><b>Abductive</b></td><td>Inference to the best explanation.</td><td><i>The hypothesis of evolution is abductive, not deductive.</i></td></tr>
-<tr>
-  <td><b>Absurd</b></td>
-  <td>Obviously logically untenable; a contradiction reached from an assumption. See also: reductio ad absurdum.</td>
-  <td><i>Assuming both that moral truth is wholly relative and wholly objective leads to an absurd conclusion.</i></td>
-</tr>
-<tr><td><b>Argument</b></td><td>A structured set of premises paired with a conclusion that they support.</td><td><i>The argument fails because one premise is false.</i></td></tr>
-<tr><td><b>Conclusion</b></td><td>The claim purportedly supported by premises.</td><td><i>Therefore, moral realism follows.</i></td></tr>
-<tr><td><b>Consistent</b></td><td>A set of claims can all be true together.</td><td><i>His claims about freedom are internally consistent.</i></td></tr>
-<tr><td><b>Contradictory</b></td><td>Two claims cannot both be true.</td><td><i>The statements are contradictory, not merely contrary.</i></td></tr>
-<tr><td><b>Counterexample</b></td><td>A case that falsifies a universal claim or shows an analysis fails.</td><td><i>Gettier cases are counterexamples to JTB.</i></td></tr>
-<tr><td><b>Deductive</b></td><td>Truth-preserving inference; conclusion guaranteed if premises are true.</td><td><i>The proof is deductive.</i></td></tr>
-<tr><td><b>Entails</b></td><td>Logically implies; truth of one guarantees truth of the other.</td><td><i>p entails q if it is impossible for p to be true and q false.</i></td></tr>
-<tr><td><b>Implies</b></td><td>Often used informally for &#x27;entails&#x27;, but weaker outside strictly logical contexts.</td><td><i>This implies a contradiction, though it may not entail one.</i></td></tr>
-<tr><td><b>Inductive</b></td><td>Probabilistic or generalizing inference; conclusion not guaranteed.</td><td><i>Hume doubts induction can be justified non‑circularly.</i></td></tr>
-<tr><td><b>Inference</b></td><td>The act or process of deriving a conclusion from premises.</td><td><i>His inference from desire to value is invalid.</i></td></tr>
-<tr><td><b>Premise</b></td><td>A statement offered in support of a conclusion.</td><td><i>Premise (2) is ambiguous.</i></td></tr>
-<tr><td><b>Sound</b></td><td>Valid and has all true premises.</td><td><i>Modus ponens yields a sound argument when its premises are true.</i></td></tr>
-<tr><td><b>Thought experiment</b></td><td>An imagined scenario used to test concepts or principles.</td><td><i>Frankfurt cases are thought experiments about free will.</i></td></tr>
-<tr><td><b>Valid</b></td><td>Impossible for all premises to be true and the conclusion false.</td><td><i>The argument is valid but unsound.</i></td></tr>
-</table>
-<h2>Syllogistic & Inference Forms - Patterns of valid reasoning</h2>
-<table border="1" cellpadding="6" cellspacing="0">
-  <tr>
-    <th>Form</th>
-    <th>Meaning</th>
-    <th>Example</th>
-  </tr>
-
-  <tr>
-    <td><b>Constructive Dilemma</b></td>
-    <td>A valid argument form combining two conditionals with a disjunction.</td>
-    <td><i>P → R; Q → S; P ∨ Q; therefore R ∨ S.</i></td>
-  </tr>
-
-  <tr>
-    <td><b>Destructive Dilemma</b></td>
-    <td>A valid argument form: if two conditionals hold and the consequents (or one of them) fail, infer that one of the antecedents must fail.</td>
-    <td><i>P → R; Q → S; ¬R ∨ ¬S; therefore ¬P ∨ ¬Q.</i></td>
-  </tr>
-
-  <tr>
-    <td><b>Disjunctive Syllogism</b></td>
-    <td>A valid inference form: from “P or Q” and “not-P,” infer “Q.”</td>
-    <td><i>P ∨ Q; ¬P; therefore Q.</i></td>
-  </tr>
-
-  <tr>
-    <td><b>Hypothetical Syllogism</b></td>
-    <td>A valid inference: if P implies Q and Q implies R, then P implies R.</td>
-    <td><i>P → Q; Q → R; therefore P → R.</i></td>
-  </tr>
-
-  <tr>
-    <td><b>Modus Ponens</b></td>
-    <td>A valid inference form: from “If P then Q” and “P,” infer “Q.”</td>
-    <td><i>P → Q; P; therefore Q.</i></td>
-  </tr>
-
-  <tr>
-    <td><b>Modus Tollens</b></td>
-    <td>A valid inference form: from “If P then Q” and “not-Q,” infer “not-P.”</td>
-    <td><i>P → Q; ¬Q; therefore ¬P.</i></td>
-  </tr>
-
-  <tr>
-    <td><b>Reductio ad Absurdum</b></td>
-    <td>An argument form in which one assumes a proposition and derives a contradiction, thereby showing the original assumption false.</td>
-    <td><i>Assume P; derive a contradiction; therefore ¬P.</i></td>
-  </tr>
-
-</table>
-<h2>Modal &amp; Metaphysical Terms</h2>
-<table border='1' cellpadding='6' cellspacing='0'>
-<tr><th>Term</th><th>Meaning</th><th>Example</th></tr>
-<tr><td><b>Accidental</b></td><td>Contingent property, not essential.</td><td><i>Being musical is accidental to Socrates.</i></td></tr>
-<tr>
-  <td><b>Categorical base</b></td>
-  <td>
-    The underlying non-dispositional property that grounds a disposition.  
-    On some theories, a disposition (e.g., fragility) exists because there is a categorical 
-    property (e.g., microstructural arrangement) that serves as its basis.
-  </td>
-  <td><i>The fragility of glass is grounded in its categorical base, namely its molecular structure.</i></td>
-</tr>
-<tr><td><b>Conceptual necessity</b></td><td>True in virtue of the concept’s meaning.</td><td><i>A triangle necessarily has three sides.</i></td></tr>
-<tr><td><b>Contingent</b></td><td>True but could have been otherwise.</td><td><i>Socrates was Greek contingently.</i></td></tr>
-<tr>
-  <td><b>Disposition</b></td>
-  <td>
-    A property defined by what its bearer is inclined to do under certain conditions.  
-    Typical examples include fragility, solubility, and elasticity.  
-    Dispositions contrast with categorical properties, which have no built-in “tendency.”
-  </td>
-  <td><i>Salt has the disposition to dissolve in water.</i></td>
-</tr>
-<tr><td><b>Essential</b></td><td>Belonging to the nature or definition of a thing.</td><td><i>Rationality is often said to be essential to humanity.</i></td></tr>
-<tr><td><b>Identity</b></td><td>Numerical sameness, not mere similarity.</td><td><i>Water is identical with H₂O.</i></td></tr>
-<tr><td><b>Impossible</b></td><td>True in no possible world.</td><td><i>A square circle is impossible.</i></td></tr>
-<tr>
-  <td><b>Inhere</b></td>
-  <td>
-    A metaphysical relation in which a property exists <i>in</i> a substance or bearer and depends on
-    that substance for its existence. Properties, attributes, or tropes are often said to inhere in the
-    objects that possess them.
-  </td>
-  <td><i>The redness of the apple inheres in the apple itself.</i></td>
-</tr>
-<tr><td><b>Necessary</b></td><td>True in all possible worlds; could not be otherwise.</td><td><i>A bachelor is necessarily unmarried.</i></td></tr>
-<tr><td><b>Necessary condition</b></td><td>Must be present for the outcome to occur.</td><td><i>Having DNA is necessary for being human.</i></td></tr>
-<tr><td><b>Possible</b></td><td>True in at least one possible world.</td><td><i>It is possible that life exists elsewhere.</i></td></tr>
-<tr><td><b>Sufficient condition</b></td><td>If present, guarantees the outcome.</td><td><i>Being a triangle is sufficient for having three sides.</i></td></tr>
-<tr><td><b>Supervene</b></td><td>Higher‑level facts depend on lower‑level facts.</td><td><i>Moral facts supervene on natural facts.</i></td></tr>
-</table>
-<h2>Epistemology &amp; Semantics</h2>
-<table border='1' cellpadding='6' cellspacing='0'>
-<tr><th>Term</th><th>Meaning</th><th>Example</th></tr>
-<tr><td><b>A posteriori</b></td><td>Knowable only through experience.</td><td><i>Water boils at ~100°C a posteriori.</i></td></tr>
-<tr><td><b>A priori</b></td><td>Knowable independently of experience.</td><td><i>2 + 2 = 4 is knowable a priori.</i></td></tr>
-<tr><td><b>Analytic</b></td><td>True by meaning alone.</td><td><i>&#x27;All bachelors are unmarried&#x27; is analytic.</i></td></tr>
-<tr><td><b>Category error</b></td><td>Assigning something to the wrong logical type.</td><td><i>Asking where &#x27;meaning&#x27; is located is a category error.</i></td></tr>
-<tr><td><b>Conceptual analysis</b></td><td>Clarifying meaning by examining use and logical relations.</td><td><i>We begin with a conceptual analysis of &#x27;knowledge&#x27;.</i></td></tr>
-<tr><td><b>Counterfactual</b></td><td>A claim about what would be true if the world were different, evaluated via possible‑worlds semantics.</td><td><i>If Kant had lived today, his political philosophy would have looked different.</i></td></tr>
-<tr><td><b>Deflationary (of truth)</b></td><td>Treats &#x27;truth&#x27; as a logical device, not a substantive property.</td><td><i>A deflationary theory explains truth as disquotation.</i></td></tr>
-<tr><td><b>Empirical</b></td><td>Derived from observation or experiment.</td><td><i>The claim is empirical, not conceptual.</i></td></tr>
-<tr><td><b>Empirical adequacy</b></td><td>Agreement with observation.</td><td><i>The theory is empirically adequate.</i></td></tr>
-<tr><td><b>Possible worlds</b></td><td>Hypothetical total ways things could be.</td><td><i>Kripke uses possible‑worlds semantics.</i></td></tr>
-<tr><td><b>Proposition</b></td><td>The content of a statement that can be true or false.</td><td><i>Beliefs have propositional content.</i></td></tr>
-<tr><td><b>Synthetic</b></td><td>Truth depends on how the world is.</td><td><i>&#x27;The cat is on the mat&#x27; is synthetic.</i></td></tr>
-<tr><td><b>Truth‑conditions</b></td><td>Circumstances under which a proposition is true.</td><td><i>For &#x27;Snow is white&#x27; to be true, snow must be white.</i></td></tr>
-</table>
-<h2>Philosophy of Mind & Consciousness</h2>
-<table border="1" cellpadding="6" cellspacing="0">
-  <tr>
-    <th>Term</th>
-    <th>Meaning</th>
-    <th>Example</th>
-  </tr>
-
-  <tr>
-    <td><b>qualia</b></td>
-    <td>
-      The subjective, qualitative aspects of conscious experience—what it is like to feel pain, see red,
-      taste chocolate, or hear a violin. Central to debates about consciousness, physicalism, and the
-      mind–body problem.
-    </td>
-    <td><i>Mary learns what seeing red is like only when she experiences the quale of red.</i></td>
-  </tr>
-
-</table>
-<h2>Normativity &amp; Reasons</h2>
-<table border='1' cellpadding='6' cellspacing='0'>
-<tr><th>Term</th><th>Meaning</th><th>Example</th></tr>
-<tr><td><b>Autonomy</b></td><td>Self‑legislation; acting according to reasons one gives oneself.</td><td><i>For Kant, autonomy constitutes freedom.</i></td></tr>
-<tr><td><b>Consequentialism</b></td><td>Evaluates actions by outcomes.</td><td><i>Utilitarianism is consequentialist.</i></td></tr>
-<tr><td><b>Deontological</b></td><td>Duty‑based ethical theory.</td><td><i>Kant&#x27;s ethics is deontological.</i></td></tr>
-<tr><td><b>Descriptive</b></td><td>States how things are.</td><td><i>The report is descriptive, not normative.</i></td></tr>
-<tr><td><b>Heteronomy</b></td><td>Being governed by external causes or desires.</td><td><i>Desire makes the will heteronomous.</i></td></tr>
-<tr><td><b>Normative</b></td><td>Concerned with what ought to be.</td><td><i>Ethics is a normative discipline.</i></td></tr>
-<tr><td><b>Reason‑giving</b></td><td>Providing considerations that count in favor of an action.</td><td><i>The moral law must be reason‑giving.</i></td></tr>
-<tr><td><b>Supererogatory</b></td><td>Morally good but not required.</td><td><i>Donating half your income is supererogatory.</i></td></tr>
-<tr><td><b>Teleological</b></td><td>Goal‑oriented explanation.</td><td><i>Aristotle’s biology is teleological.</i></td></tr>
-</table>
-<h2>Latin &amp; Classical Phrases</h2>
-<table border='1' cellpadding='6' cellspacing='0'>
-<tr><th>Term</th><th>Meaning</th><th>Example</th></tr>
-<tr><td><b>a fortiori</b></td><td>From stronger reason.</td><td><i>If lying is wrong, perjury is a fortiori wrong.</i></td></tr>
-<tr><td><b>a posteriori / a priori</b></td><td>After / before experience.</td><td><i>Mathematics is mostly a priori.</i></td></tr>
-<tr><td><b>ad hoc</b></td><td>For this purpose only; without independent support.</td><td><i>The ad hoc fix rescues the theory.</i></td></tr>
-<tr><td><b>ceteris paribus</b></td><td>All else being equal.</td><td><i>Many social‑science laws are ceteris paribus.</i></td></tr>
-<tr><td><b>de facto / de jure</b></td><td>In fact / by law.</td><td><i>De jure equality may not ensure de facto equality.</i></td></tr>
-<tr>
-  <td><b>de se, de re, de dicto</b></td>
-  <td>
-    Three related distinctions used in philosophy of language, mind, and modality.<br><br>
-    <b>de dicto:</b> concerning the proposition as a whole; the modal or attitude operator has wide scope over the entire statement.<br>
-    <b>de re:</b> concerning the thing; the modal or attitude operator applies to an object, not to the whole proposition.<br>
-    <b>de se:</b> concerning oneself; a self-locating or first-personal attitude that cannot be reduced to the de dicto form.
-  </td>
-  <td><i>
-    de dicto: “Necessarily, the number of planets is 8.”<br>
-    de re: “The number 8 is necessarily the number of planets.”<br>
-    de se: “I believe that I (myself) am in danger.”
-  </i></td>
-</tr>
-<tr><td><b>ex hypothesi</b></td><td>By hypothesis.</td><td><i>Ex hypothesi, the agent is omniscient.</i></td></tr>
-<tr><td><b>ipso facto</b></td><td>By that very fact.</td><td><i>He violated the rule and ipso facto lost immunity.</i></td></tr>
-<tr><td><b>mutatis mutandis</b></td><td>With necessary changes having been made.</td><td><i>The same applies, mutatis mutandis.</i></td></tr>
-<tr><td><b>per se</b></td><td>In itself.</td><td><i>Knowledge per se has value.</i></td></tr>
-<tr><td><b>post hoc, ergo propter hoc</b></td><td>A fallacy: after this, therefore because of this.</td><td><i>Beware the post hoc fallacy.</i></td></tr>
-<tr><td><b>prima facie</b></td><td>At first appearance.</td><td><i>We have a prima facie duty not to lie.</i></td></tr>
-<tr><td><b>reductio ad absurdum</b></td><td>Derive a contradiction from an assumption.</td><td><i>Assume p; derive absurdity; hence not‑p.</i></td></tr>
-<tr><td><b>sub specie aeternitatis</b></td><td>Under the aspect of eternity.</td><td><i>Spinoza urges us to see things sub specie aeternitatis.</i></td></tr>
-<tr><td><b>sui generis</b></td><td>Of its own kind.</td><td><i>Consciousness may be sui generis.</i></td></tr>
-</table>
-<h2>Modified English Verbs &amp; Markers</h2>
-<table border='1' cellpadding='6' cellspacing='0'>
-<tr><th>Term</th><th>Meaning</th><th>Example</th></tr>
-<tr><td><b>Analyze</b></td><td>Break into constituent conditions.</td><td><i>We analyze knowledge into belief, truth, justification.</i></td></tr>
-<tr><td><b>Argue</b></td><td>Present structured reasons.</td><td><i>I argue that meaning is use.</i></td></tr>
-<tr><td><b>As Such</b></td><td>In its own right.</td><td><i>Knowledge as such has value.</i></td></tr>
-<tr><td><b>Assume</b></td><td>Take as true within an argument.</td><td><i>Assume determinism.</i></td></tr>
-<tr><td><b>By Hypothesis / Ex Hypothesi</b></td><td>Within the assumed framework.</td><td><i>Ex hypothesi, the agent is omniscient.</i></td></tr>
-<tr><td><b>Characterize</b></td><td>Describe essential features.</td><td><i>He characterises moral realism as belief in objective moral facts.</i></td></tr>
-<tr><td><b>Claim</b></td><td>Assert a position.</td><td><i>He claims consciousness is non‑computational.</i></td></tr>
-<tr><td><b>Clarify</b></td><td>Remove ambiguity.</td><td><i>The author clarifies &#x27;direct perception&#x27;.</i></td></tr>
-<tr><td><b>Consistent with</b></td><td>Compatible with.</td><td><i>Compatibilism is consistent with determinism.</i></td></tr>
-<tr><td><b>Contend</b></td><td>Assert with emphasis.</td><td><i>I contend that indexicals are essential to thought.</i></td></tr>
-<tr><td><b>Contradict</b></td><td>Be jointly impossible.</td><td><i>Freedom and determinism contradict each other.</i></td></tr>
-<tr><td><b>Corroborate</b></td><td>Provide independent support.</td><td><i>Later studies corroborate the result.</i></td></tr>
-<tr><td><b>Define</b></td><td>Specify necessary and sufficient conditions.</td><td><i>Plato defines knowledge as justified true belief.</i></td></tr>
-<tr><td><b>Demonstrate</b></td><td>Prove conclusively.</td><td><i>The proof demonstrates the theorem.</i></td></tr>
-<tr><td><b>Deny / Reject</b></td><td>Withhold assent.</td><td><i>He denies that qualia can be reduced.</i></td></tr>
-<tr><td><b>Elucidate</b></td><td>Make clear through explanation.</td><td><i>Wittgenstein seeks to elucidate linguistic rules.</i></td></tr>
-<tr><td><b>Entail</b></td><td>Logically imply.</td><td><i>Being a triangle entails having three sides.</i></td></tr>
-<tr><td><b>Establish</b></td><td>Make defensible within an argument.</td><td><i>This establishes the plausibility of compatibilism.</i></td></tr>
-<tr><td><b>Follow</b></td><td>Be a logical consequence.</td><td><i>From (1)-(3), it follows that compatibilism holds.</i></td></tr>
-<tr><td><b>For the Sake of Argument</b></td><td>Temporary concession.</td><td><i>For the sake of argument, accept determinism.</i></td></tr>
-<tr><td><b>Grant / Concede</b></td><td>Temporarily accept a premise.</td><td><i>Grant that desires cause actions…</i></td></tr>
-<tr><td><b>Indicate / Suggest</b></td><td>Provide some support, weaker than &#x27;show&#x27;.</td><td><i>The data suggest representationalism.</i></td></tr>
-<tr>
-  <td><b>In Virtue of</b></td>
-  <td>Because of; by reason of; citing the grounding feature that explains why something holds.</td>
-  <td><i>The act is wrong in virtue of its maxim, not its consequences.</i></td>
-</tr>
-<tr><td><b>Maintain</b></td><td>Sustain a claim across objections.</td><td><i>They maintain that moral properties are natural.</i></td></tr>
-<tr><td><b>Presuppose</b></td><td>Require as precondition for meaning.</td><td><i>Promises presuppose agency.</i></td></tr>
-<tr><td><b>Prove</b></td><td>Give a deductively valid argument.</td><td><i>We prove the lemma by induction.</i></td></tr>
-<tr><td><b>Rebut</b></td><td>Offer counter‑reasons.</td><td><i>We rebut the skeptic.</i></td></tr>
-<tr><td><b>Refute</b></td><td>Show an argument false.</td><td><i>Kripke refutes descriptivism.</i></td></tr>
-<tr><td><b>Show</b></td><td>Provide a reasoned argument establishing a conclusion.</td><td><i>The Gettier cases show JTB is insufficient.</i></td></tr>
-<tr><td><b>Specify</b></td><td>Narrow or fix reference.</td><td><i>We specify &#x27;reason&#x27; as instrumental.</i></td></tr>
-<tr><td><b>Support</b></td><td>Count as evidence in favor of.</td><td><i>The data support the hypothesis.</i></td></tr>
-<tr><td><b>Undermine</b></td><td>Reduce justification.</td><td><i>These cases undermine the transparency thesis.</i></td></tr>
-</table>
-<h2>Assumptive &amp; Foundational Terms</h2>
-<table border='1' cellpadding='6' cellspacing='0'>
-<tr><th>Term</th><th>Meaning</th><th>Example</th></tr>
-<tr><td><b>Assumption</b></td><td>Proposition taken as true within an argument for exploration.</td><td><i>Assume determinism; then moral responsibility becomes problematic.</i></td></tr>
-<tr><td><b>Axiom</b></td><td>Foundational truth taken as given.</td><td><i>Nothing can be both true and false.</i></td></tr>
-<tr><td><b>Grant / Concede</b></td><td>Accept temporarily for dialectical purposes.</td><td><i>Grant that desires cause actions….</i></td></tr>
-<tr><td><b>Hypothesis</b></td><td>Proposed assumptiontested for explanation.</td><td><i>The hypothesis is that all knowledge derives from experience.</i></td></tr>
-<tr><td><b>Postulate</b></td><td>A necessary assumption for a system.</td><td><i>Freedom is a postulate of practical reason.</i></td></tr>
-<tr><td><b>Premise</b></td><td>Explicit starting point of an argument.</td><td><i>Premise (1): All humans are mortal.</i></td></tr>
-<tr><td><b>Presume</b></td><td>Treat as true with prior probability.</td><td><i>We presume testimony is generally reliable.</i></td></tr>
-<tr><td><b>Presupposition</b></td><td>Background assumption required for meaningfulness.</td><td><i>‘John stopped smoking’ presupposes that he once smoked.</i></td></tr>
-<tr><td><b>Stipulation</b></td><td>Definition introduced by fiat.</td><td><i>Let us stipulate that &#x27;agent&#x27; means a being capable of action.</i></td></tr>
-<tr><td><b>Supposition</b></td><td>Hypothetical assumption.</td><td><i>Suppose there were a brain in a vat.</i></td></tr>
-</table>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  var input = document.getElementById('searchBox');
-  if (!input) return;
-  input.addEventListener('input', function () {
-    var term = input.value.trim().toLowerCase();
-    var tables = document.querySelectorAll('table');
-    tables.forEach(function (table) {
-      var rows = table.querySelectorAll('tr');
-      rows.forEach(function (row) {
-        var isHeader = row.querySelector('th') !== null;
-        if (isHeader) return;
-        if (!term) {
-          row.style.display = '';
-          return;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Common Analytical Philosophy Terms - A reference guide for key concepts in analytical philosophy">
+    <title>Common Analytical Philosophy Terms</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        var text = row.textContent.toLowerCase();
-        row.style.display = text.indexOf(term) !== -1 ? '' : 'none';
-      });
-    });
-  });
-});
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-
-  function updateSectionVisibility() {
-    var sections = document.querySelectorAll('h2');   // each section heading
-    sections.forEach(function (sec) {
-      var table = sec.nextElementSibling;
-      if (!table || table.tagName.toLowerCase() !== 'table') return;
-
-      // count visible non-header rows
-      var visible = 0;
-      table.querySelectorAll('tr').forEach(function (row) {
-        if (row.querySelector('th')) return; // skip headers
-        if (row.style.display !== 'none') visible++;
-      });
-
-      // hide section heading + table if no visible rows
-      if (visible === 0) {
-        sec.style.display = 'none';
-        table.style.display = 'none';
         
-        // Also remove vertical spacing entirely
-        sec.style.margin = '0';
-        table.style.margin = '0';
-        table.style.padding = '0';
-      } else {
-        sec.style.display = '';
-        table.style.display = '';
-        sec.style.margin = '';
-        table.style.margin = '';
-        table.style.padding = '';
-      }
-    });
-  }
-
-  // Run once initially
-  updateSectionVisibility();
-
-  // Patch search box so that it also updates section visibility
-  var input = document.getElementById('searchBox');
-  if (input) {
-    input.addEventListener('input', function () {
-      // defer slightly so row filtering completes first
-      setTimeout(updateSectionVisibility, 10);
-    });
-  }
-
-});
-</script>
-</body></html>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+        
+        .term {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+        
+        .term h2 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        .term p {
+            color: #555;
+            margin-bottom: 8px;
+        }
+        
+        .term em {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .term {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Common Analytical Philosophy Terms</h1>
+            <p class="subtitle">A Reference Guide for Key Concepts</p>
+        </header>
+        
+        <main>
+            <div class="term">
+                <h2>A Priori / A Posteriori</h2>
+                <p><strong>A Priori:</strong> Knowledge that is independent of experience. For example, mathematical truths like "2+2=4" are known a priori.</p>
+                <p><strong>A Posteriori:</strong> Knowledge that depends on empirical evidence or experience. For example, "The sky is blue" is known a posteriori.</p>
+                <p><em>Etymology: From Latin, meaning "from the earlier" and "from the later"</em></p>
+            </div>
+            
+            <div class="term">
+                <h2>Analytic / Synthetic</h2>
+                <p><strong>Analytic:</strong> A statement whose truth is determined by the meanings of its terms. For example, "All bachelors are unmarried."</p>
+                <p><strong>Synthetic:</strong> A statement whose truth depends on facts about the world. For example, "All bachelors are happy."</p>
+                <p><em>Key distinction introduced by Immanuel Kant and refined by logical positivists</em></p>
+            </div>
+            
+            <div class="term">
+                <h2>Modal Logic</h2>
+                <p>The study of necessity and possibility. Modal logic extends classical logic with operators for "necessarily" (□) and "possibly" (◇).</p>
+                <p>Used to analyze statements about what must be true, what could be true, and what is actually true.</p>
+                <p><em>Central to discussions of metaphysical possibility and counterfactuals</em></p>
+            </div>
+            
+            <div class="term">
+                <h2>Supervenience</h2>
+                <p>A relationship between two sets of properties where one set (A) supervenes on another (B) if there can be no change in A without a change in B.</p>
+                <p>Example: Mental properties are often said to supervene on physical properties—no mental change without a physical change.</p>
+                <p><em>Important in philosophy of mind and discussions of reduction</em></p>
+            </div>
+            
+            <div class="term">
+                <h2>Truth-Maker Theory</h2>
+                <p>The view that true propositions are made true by things in the world—truth-makers.</p>
+                <p>For example, the proposition "Snow is white" is made true by the whiteness of snow.</p>
+                <p><em>Connects truth to ontology and grounds truth in reality</em></p>
+            </div>
+            
+            <div class="term">
+                <h2>Intentionality</h2>
+                <p>The property of mental states whereby they are about or directed toward objects or states of affairs.</p>
+                <p>For example, beliefs, desires, and thoughts all have intentionality—they are about something.</p>
+                <p><em>Central concept in philosophy of mind, from Brentano to contemporary discussions</em></p>
+            </div>
+            
+            <div class="term">
+                <h2>Qualia</h2>
+                <p>The subjective, qualitative aspects of conscious experience. "What it's like" to experience something.</p>
+                <p>For example, the redness of red, the painfulness of pain, or the taste of chocolate.</p>
+                <p><em>Key issue in debates about consciousness and the hard problem of consciousness</em></p>
+            </div>
+            
+            <div class="term">
+                <h2>Logical Positivism</h2>
+                <p>A philosophical movement that held only statements verifiable through empirical observation or logical analysis are meaningful.</p>
+                <p>Associated with the Vienna Circle and philosophers like A.J. Ayer.</p>
+                <p><em>Influential in early 20th century, though now largely rejected in its original form</em></p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>philterms - Common Analytical Philosophy Terms</p>
+            <p>A living reference for students and enthusiasts of analytical philosophy</p>
+        </footer>
+    </div>
+</body>
+</html>
