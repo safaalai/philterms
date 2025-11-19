@@ -3,7 +3,7 @@
 <link rel="icon" href="favicon.ico">
 <title>Common Terms in Analytical Philosophy (English & Latin)</title>
 <style>
-body{font-family:Arial, sans-serif;max-width:900px;margin:2rem auto;line-height:1.5;}
+body{font-family:Arial, sans-serif;max-width:900px;margin:2rem auto;line-height:1.5;padding-top:120px;}
 #header-block{display:flex; flex-direction:row;}
 #header-words{display:flex; flex-direction:column;}
 h1{margin-top:0rem; margin-bottom:0rem; line-height:1.2}
@@ -18,27 +18,33 @@ th{background:#f5f5f5;}
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  background: white;    /* keeps it readable and not transparent */
-  z-index: 1000;        /* ensures it stays above tables */
-  padding: 15px 20px 10px 20px;
-  border-bottom: 1px solid #ddd;  /* subtle separation from text */
+  width: 100%;          /* full-width bar */
+  background: white;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+#fixed-header-inner {
+  max-width: 800px;      /* same as body max-width */
+  margin: 0 auto;        /* centers inside the full-width bar */
+  padding: 15px 20px 10px;
 }
 </style>
 </head>
 <body>
 <div id="fixed-header">
-  <div id="header-block">
-    <img src="favicon.ico" alt="logo" style="height:40px; width:40px; vertical-align:middle; margin-right:10px;">
-    <div id="header-words">
-      <h1>PhilTerms</h1>
-      <h3 id="subtitle">Common Terms in Analytical Philosophy (English & Latin)</h3>
+  <div id="fixed-header_inner">
+    <div id="header-block">
+      <img src="favicon.ico" alt="logo" style="height:40px; width:40px; vertical-align:middle; margin-right:10px;">
+      <div id="header-words">
+        <h1>PhilTerms</h1>
+        <h3 id="subtitle">Common Terms in Analytical Philosophy (English & Latin)</h3>
+      </div>
     </div>
-  </div>
-
-  <div id="search-container">
-    <input type="search" id="searchBox" placeholder="Type to filter terms, meanings, and examples...">
-    <div id="search-help">Search scans all sections. Leave empty to show everything.</div>
+  
+    <div id="search-container">
+      <input type="search" id="searchBox" placeholder="Type to filter terms, meanings, and examples...">
+      <div id="search-help">Search scans all sections. Leave empty to show everything.</div>
+    </div>
   </div>
 </div>
 <h2>Logical Structure &amp; Argument</h2>
