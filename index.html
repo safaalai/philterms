@@ -32,17 +32,13 @@ th{background:#f5f5f5;}
 
 #side-nav {
   position: fixed;
-  /* Match this 'top' to the height of your fixed header so it lines up
-     with the top of the content panel. Adjust if needed. */
-  top: 120px;
-  /* Align left edge with the body's left edge.
-     Replace 800px with your actual body max-width. */
-  left: calc(50% - 400px); /* 400px = 800px / 2 */
+  top: 130px;  /* will adjust later */
+  left: 0;
   z-index: 900;
 }
 
 #side-nav-inner {
-  width: 180px;              /* width of the panel */
+  width: 180px;
   padding: 10px 12px;
   background: #f7f7f7;
   border: 1px solid #ddd;
@@ -50,11 +46,19 @@ th{background:#f5f5f5;}
   font-size: 0.9rem;
 }
 
-/* Make sure the main content has enough left margin so the panel
-   doesn't overlap it (only applies on wider screens). */
 @media (min-width: 900px) {
   body {
-    padding-left: 200px;     /* slightly more than side-nav-inner width */
+    padding-left: 210px; /* shift content so panel doesn't overlap */
+  }
+}
+
+@media (max-width: 899px) {
+  #side-nav {
+    display: none;
+  }
+
+  body {
+    padding-left: 0;
   }
 }
 
