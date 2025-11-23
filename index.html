@@ -42,10 +42,21 @@ th{background:#f5f5f5;}
   padding-left: 0;
 }
 
+#side-nav li {
+  list-style: none;
+  padding-left: 20px;   /* indent for text */
+  text-indent: -12px;   /* pull bullet left, create hanging indent */
+  line-height: 1.4;
+  margin-bottom: 6px;
+  position: relative;
+}
+
 #side-nav li::before {
   content: "φ";
   font-family: serif;
-  margin-right: 8px;
+  position: absolute;
+  left: 0;
+  top: 0;   /* ensures alignment with first line */
   color: #444;
 }
 
